@@ -12,7 +12,7 @@ class Config:
     UPLOADED_PHOTOS_DEST ='app/static/photos'
     SENDER_EMAIL = 'abdimulhin.yussuf@student.moringaschool.com'
     
-    
+
 # class ProdConfig(Config):
 #     SQLALCHEMY_DATABASE_URI = os.environ.get("DATABASE_URL")
 
