@@ -1,0 +1,130 @@
+{% extends "base.html" %}
+{% block styles%}
+{{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+{% endblock%}
+{% block content %}
+
+<div class="card-deck">
+
+    <div class="card mb-4">
+
+      <div class="view overlay">
+        <img class="card-img-top" src="https://thetvtraveler.com/wp-content/uploads/2019/03/endgame.jpg" height="300px" alt="Card image cap">
+        <a href="{{url_for('main.pitches_category',category='Movie Blog')}}">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+
+      <div class="card-body">
+     
+        <h4 class="card-title">Movie blog</h4>
+     
+        <p class="card-text">Talks about the popular movies</p>
+        
+        <a href="{{url_for('main.pitches_category',category='Movie Blog')}}" class="btn btn-primary" role="button">Read more</a>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+   
+      <div class="view overlay">
+        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRHm5wDUfxc2iG-AxVAkiPqXFgoOQx0B3PJbf-NZgUSMXHGQlH9Eg" alt="Card image cap">
+        <a href="">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+     
+      <div class="card-body">
+     
+        <h4 class="card-title">Food Blog</h4>
+      
+        <p class="card-text">Talks on food matters</p>
+   
+        <a href="{{url_for('main.pitches_category',category='Food Blog')}}" class="btn btn-primary" role="button">Read more</a>
+      </div>
+    </div>
+
+    <div class="card mb-4">
+    
+      <div class="view overlay">
+        <img class="card-img-top" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaDZCnkec_dZr1jl8xfigD7YHtC01sZ4ttBlARmRTg7Jm1yPQx" alt="Card image cap">
+        <a href="">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+   
+      <div class="card-body">
+   
+        <h4 class="card-title">Fashion Blog</h4>
+     
+        <p class="card-text">Talks on all kinds of fashion</p>
+       
+        <a href="{{url_for('main.pitches_category',category='Fashion Blog')}}" class="btn btn-primary" role="button">Read more</a>
+      </div>
+    </div>
+   
+  </div>
+
+<div class="card-deck">
+    
+    <div class="card mb-4">
+     
+      <div class="view overlay">
+        <img class="card-img-top" src="https://i.ytimg.com/vi/Vhq-OykV6nQ/maxresdefault.jpg" alt="Card image cap">
+        <a href="">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+    
+      <div class="card-body">
+       
+        <h4 class="card-title">Travel Blog</h4>
+      
+        <p class="card-text">Travel talk and more car talk</p>
+      
+        <a href="{{url_for('main.pitches_category',category='Travel Blog')}}" class="btn btn-primary" role="button">Read more</a>
+      </div>
+    </div>
+   
+    <div class="card mb-4">
+
+      <div class="view overlay">
+        <img class="card-img-top" src="https://rachelcorbett.com.au/wp-content/uploads/2017/08/Drawing-of-man-playing-music-on-a-guitar.jpg" alt="Card image cap">
+        <a href="">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+  
+      <div class="card-body">
+       
+        <h4 class="card-title">Music Blog</h4>
+    
+        <p class="card-text">Music matters</p>
+        
+        <a href="{{url_for('main.pitches_category',category='Music Blog')}}" class="btn btn-primary" role="button">Read more</a>
+      </div>
+    </div>
+ 
+    <div class="card mb-4">
+   
+      <div class="view overlay">
+        <img class="card-img-top" src="https://mdbootstrap.com/img/Photos/Others/images/15.jpg" alt="Card image cap">
+        <a href="">
+          <div class="mask rgba-white-slight"></div>
+        </a>
+      </div>
+    
+      <div class="card-body">
+  
+        <h4 class="card-title">Random Blogs</h4>
+    
+        <p class="card-text">Any other talk</p>
+        
+        <a href="{{url_for('main.pitches_category',category='All Blogs')}}" class="btn btn-primary" role="button">Read more</a>
+      </div>
+    </div>
+
+  </div>
+
+{% endblock content %}

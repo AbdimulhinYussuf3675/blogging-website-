@@ -1,97 +1,55 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     margin: 0;
-    height: 100%;
-    width: 100%;
-    padding: 0;
-    z-index: 1;
-    background-color: aliceblue;
+    font: normal 75% Arial, Helvetica, sans-serif;
 }
 
-.navbar-brand{
-    background-color: rgb(255, 255, 255);
+canvas {
+    display: block;
 }
 
-#cats{
-    color: white;
-    font-size: 18px;
+h1 {
+    font-family: 'Chilanka';
+    font-size: 50px;
+    color: whitesmoke;
 }
 
-#carded{
-    border-radius:6px; 
-    background-color: rgb(241, 241, 241);
+p {
+    font-family: 'Chilanka';
+    font-size: 30px;
+    color: whitesmoke;
 }
 
-#posts{
-    color: rgb(255, 255, 255);
-    font-weight: bolder;
-    margin-top: 2%;
-    font-size: 40px;
-    font-family: 'Farro', sans-serif;
+nav {
+    font-family: 'Chilanka';
 }
 
-.pict{
-    margin-top: 2%;
+.error {
+    background-image: url('/app/static/images/40f.jpeg');
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
-.foot{
-    margin: 20px;
-}
-
-#postform{
-    color: white;
-    margin-top: 3%;
-    background-color: rgba(0, 0, 0, 0.456);
-    padding:3%;
-    border-radius: 8px;
-    z-index: 1;
-}
-
-#login{
-    margin-top: 5%;
-    color: white;
-    background-color: rgba(0, 0, 0, 0.456);
-    border-radius: 8px;
-    padding:3%;
-}
-
-#sign{
-    color:rgb(0, 0, 0);
-    text-decoration: underline;
-}
-
-#coms{
-    color: white;
-}
-
-#allcomments{
-    padding-top: 2%;
+.post {
+    text-align: center;
+    font-size: 150%;
+    font-family: Courgette;
+    border: 0.5px solid black;
     border-radius: 10px;
-    height: 100%;
+    padding: 5%;
+    background-color: rgba(0, 0, 0, 0.4);
 }
 
-.commentform{
-    color: white;
-    margin-top: 1%;
+h3 {
+    color: antiquewhite;
+    font-family: 'Chilanka';
+    margin-left: 20px;
 }
 
-#user{
-    margin-top: 4%;
-    color: white;
-}
-
-.pitches{
-    background-color: azure;
-    color: black;
-    padding: 2%;
-    border-radius: 8px;
-    margin-bottom: 1%;
-}
-
-.updateprofile{
-    margin-top: 5%;
-    color: white;
-}
-
-#imgform{
-    display: none;
+.row {
+    background-color: aquamarine;
 }

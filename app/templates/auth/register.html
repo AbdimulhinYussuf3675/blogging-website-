@@ -1,0 +1,13 @@
+{% extends 'base.html'%}
+{% import 'bootstrap/wtf.html' as wtf%}
+{% block content %}
+<div class="row col-md-12 mt-5" style="height: 100vh;">
+    <div class="card" style="min-height: 500px; margin-left: 300px; box-shadow: 0px 8px 60px -10px rgba(13, 28, 39, 0.6); background: #fff;
+    max-width: 700px; position: relative;">
+        <div class="card-heading text-center mt-5">
+            <h2 style="color: rgb(26, 26, 39); padding-top: 30px;"><strong>Join us today.</strong></h2>
+            <div style="width: 600px; margin-left: 50px; padding-top: 30px;">{{wtf.quick_form(registration_form)}}</div>
+        </div>
+    </div>
+</div>
+{% endblock%}

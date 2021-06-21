@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% block styles%}
+{{ super() }}
+<link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+{% endblock%}
+
+{% block content%}
+<body style="background-color: rgb(68, 195, 174);">
+<div class="container-fluid" >
+    <div class="row">
+        <h3>Comments for <strong>{{pitch.title}}</strong> by <strong>{{pitch.user.username}}</strong></h3>
+        <a href="{{url_for('main.new_comment',uname = current_user.username, pitch_id = pitch.id)}}"><button
+                class="btn btn-info mr-0">Add a comment</button></a>
+    </div>
+    {% if comments %}
+    {%for comment in comments%}
+    <div class="row">
+        <div class="col">
+            <p class="d-inline"><strong>{{comment.user.username}}</strong>: " {{comment.post_comment}} "</p>
+            <p>Posted on <strong>{{comment.date}}</strong> at <strong>{{comment.time}}</strong></p>
+        </div>
+    </div>
+    <hr>
+    {% endfor %}
+    {% else %}
+    <h2>There are no comments</h2>
+    {% endif %}
+</div>
+</body>
+{% endblock %}
