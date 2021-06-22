@@ -1,6 +1,6 @@
 # Adams~~Bloggers
 
-Blogchain is an application that allows the writer to post their blogs and users to comment and like on them, it also displays random quotes
+Adam~~Blog is an application that allows the writer to post their blogs and users to comment and like on them, it also displays random quotes
 
 
 
