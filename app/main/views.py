@@ -1,7 +1,7 @@
 from flask import render_template,request,redirect,url_for,abort,flash
 from . import main
 from .forms import PitchForm,CommentForm,UpdateProfile
-from ..models import User,Comment
+from ..models import User,Pitch,Comment
 from .. import db,photos
 import markdown2
 from flask_login import login_required, current_user
@@ -13,12 +13,12 @@ def index():
     '''
     View root page function that returns the index page and its data
     '''
-    # pitches =Pitch.query.order_by(Pitch.date.desc()).all()
+    pitches =Pitch.query.order_by(Pitch.date.desc()).all()
     title = "Home"
     sambu = random_post()
     quote = sambu["quote"]
     quote_author = sambu ["author"]
-    return render_template('index.html', title = title, quote = quote , quote_author=quote_author)
+    return render_template('index.html', title = title, pitches = pitches, quote = quote , quote_author=quote_author)
 
 @main.route('/pitches/<category>')
 def pitches_category(category):
