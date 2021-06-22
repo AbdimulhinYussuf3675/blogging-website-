@@ -32,7 +32,7 @@ def register():
         db.session.add(user)
         db.session.commit()
         flash("You've been successfully registered!")
-        mail_message("Welcome to Bloggers","email/welcome_user",user.email,user=user)
+        mail_message("Welcome to Bloggers","email/welcome_user",user.email,users=user)
         return redirect(url_for('auth.login'))
     title = "Bloggers registration"
     return render_template('auth/register.html',registration_form = form, title = title)
